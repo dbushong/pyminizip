@@ -4,13 +4,13 @@ import os
 from setuptools import setup, Extension
 
 SOURCES = ['src/py_minizip.c', 'src/py_miniunz.c',
-           'zlib-1.2.11/contrib/minizip/zip.c', 'zlib-1.2.11/contrib/minizip/unzip.c', 'zlib-1.2.11/contrib/minizip/ioapi.c',
-           'zlib-1.2.11/adler32.c', 'zlib-1.2.11/compress.c', 'zlib-1.2.11/crc32.c', 'zlib-1.2.11/deflate.c',
-           'zlib-1.2.11/infback.c', 'zlib-1.2.11/inffast.c', 'zlib-1.2.11/inflate.c',
-           'zlib-1.2.11/inftrees.c', 'zlib-1.2.11/trees.c', 'zlib-1.2.11/uncompr.c', 'zlib-1.2.11/zutil.c']
+           'zlib-1.3.1/contrib/minizip/zip.c', 'zlib-1.3.1/contrib/minizip/unzip.c', 'zlib-1.3.1/contrib/minizip/ioapi.c',
+           'zlib-1.3.1/adler32.c', 'zlib-1.3.1/compress.c', 'zlib-1.3.1/crc32.c', 'zlib-1.3.1/deflate.c',
+           'zlib-1.3.1/infback.c', 'zlib-1.3.1/inffast.c', 'zlib-1.3.1/inflate.c',
+           'zlib-1.3.1/inftrees.c', 'zlib-1.3.1/trees.c', 'zlib-1.3.1/uncompr.c', 'zlib-1.3.1/zutil.c']
 
 if 'win32' in sys.platform:
-    SOURCES.append('zlib-1.2.11/contrib/minizip/iowin32.c')
+    SOURCES.append('zlib-1.3.1/contrib/minizip/iowin32.c')
 
 def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
@@ -39,7 +39,7 @@ setup(
     ext_modules=[
         Extension(name="pyminizip",
                   sources=SOURCES,
-                  include_dirs=['src','zlib-1.2.11','zlib-1.2.11/contrib/minizip'],
+                  include_dirs=['src','zlib-1.3.1','zlib-1.3.1/contrib/minizip'],
                   )
         ],
     long_description = read('README.md'),
