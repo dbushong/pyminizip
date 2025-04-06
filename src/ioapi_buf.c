@@ -20,7 +20,7 @@
 #include <stdarg.h>
 
 #include "zlib.h"
-#include "ioapi.h"
+#include "minizip/ioapi.h"
 
 #include "ioapi_buf.h"
 

@@ -25,7 +25,7 @@
   If, for some reason, all these files are missing, the Info-ZIP license
   also may be found at:  ftp://ftp.info-zip.org/pub/infozip/license.html
 
-        crypt.c (full version) by Info-ZIP.      Last revised:  [see mz_crypt.h]
+        crypt.c (full version) by Info-ZIP.      Last revised:  [see crypt.h]
 
   The encryption/decryption parts of this source code (as opposed to the
   non-echoing password parts) were originally written in Europe.  The
@@ -189,7 +189,7 @@ typedef struct
 
 
 #ifndef NOUNCRYPT
-#include "mz_crypt.h"
+#include "crypt.h"
 #endif
 
 

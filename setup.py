@@ -39,7 +39,7 @@ setup(
     ext_modules=[
         Extension(name="pyminizip",
                   sources=SOURCES,
-                  include_dirs=['src','zlib-1.3.1','zlib-1.3.1/contrib/minizip'],
+                  include_dirs=['src','zlib-1.3.1','zlib-1.3.1/contrib'],
                   )
         ],
     long_description = read('README.md'),

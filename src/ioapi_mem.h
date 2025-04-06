@@ -24,7 +24,7 @@
 #include <string.h>
 
 #include "zlib.h"
-#include "ioapi.h"
+#include "minizip/ioapi.h"
 
 
 voidpf ZCALLBACK fopen_mem_func OF((voidpf opaque,const char* filename,int mode));

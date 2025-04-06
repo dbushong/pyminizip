@@ -19,7 +19,7 @@
 #include <string.h>
 
 #include "zlib.h"
-#include "ioapi.h"
+#include "minizip/ioapi.h"
 
 #define IOBUF_BUFFERSIZE (64 * 1024)
 

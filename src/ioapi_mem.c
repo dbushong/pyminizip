@@ -24,7 +24,7 @@
 #include <string.h>
 
 #include "zlib.h"
-#include "ioapi.h"
+#include "minizip/ioapi.h"
 
 #include "ioapi_mem.h"
 

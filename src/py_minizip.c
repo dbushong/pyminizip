@@ -67,11 +67,11 @@
 # include <sys/stat.h>
 #endif
 
-#include "zip.h"
+#include "minizip/zip.h"
 
 #ifdef _WIN32
     #define USEWIN32IOAPI
-    #include "iowin32.h"
+    #include "minizip/iowin32.h"
 #endif
 
 #define WRITEBUFFERSIZE (16384)

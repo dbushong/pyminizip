@@ -26,7 +26,7 @@ libminizip_la_LDFLAGS = $(AM_LDFLAGS) -version-info 1:0:0 -lz
 
 minizip_includedir = $(includedir)/minizip
 minizip_include_HEADERS = \
-	mz_crypt.h \
+	crypt.h \
 	ioapi.h \
 	mztools.h \
 	unzip.h \

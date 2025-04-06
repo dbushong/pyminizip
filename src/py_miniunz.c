@@ -74,7 +74,7 @@
 #define CHDIR(d) chdir(d)
 #endif
 
-#include "unzip.h"
+#include "minizip/unzip.h"
 
 #define CASESENSITIVITY (0)
 #define WRITEBUFFERSIZE (8192)
@@ -82,7 +82,7 @@
 
 #ifdef _WIN32
 #define USEWIN32IOAPI
-#include "iowin32.h"
+#include "minizip/iowin32.h"
 #endif
 
 PyObject* pyerr_msg_unz = NULL;
